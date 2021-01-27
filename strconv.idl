@@ -1,0 +1,23 @@
+/*
+** strconv.idl
+**
+** Sample module for generating IDL files and tesing X Communication Protocol framework
+*/
+
+module strconv;
+
+// Our interface
+interface StrConv {
+
+    // Those messages produce strings from scalar values
+    void FromBool(in bool input, out string output);
+    void FromInt(in int input, out string output);
+    void FromDouble(in double input, out string output);
+
+    // Those messages convert strings to scalar values
+    void ToBool(in string input, out bool output);
+    void ToInt(in string input, out int output);
+    void ToDouble(in string input, out double output);
+
+};
+
