@@ -45,7 +45,7 @@ xcp_error_t StrConv_FromDouble_s(/* [in] */ double input, /* [out] */ char * *ou
         return err;
     }
 
-    sprintf(buffer, "%lf", input);
+    sprintf(buffer, "%f", input);
 
     *output = buffer;
     return err;
